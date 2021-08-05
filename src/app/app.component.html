@@ -1,1 +1,19 @@
 <app-header></app-header>
+
+<p>
+    <strong>Hello</strong>
+    <input class="form-control" type="text" placeholder="Your name" (input)="ontyping($event)" />
+    Welcome to the<b>angCare!</b>
+</p>
+<p>Hello {{name}}<br>
+    I am Joe, your personal assistant! I will guide you further...
+</p>
+<div style="text-align:left;padding: 20px">
+    <p> Click on Sign up to create your account with angCare:
+        <button class="btn btn-primary" (click)="signup()">Sign up with
+            {{title}}</button> : {{status}}
+    </p>
+    <p> Click on Sign up to create your account with angCare:
+        <button class="btn btn-primary"> Sign In </button>
+    </p>
+</div>
