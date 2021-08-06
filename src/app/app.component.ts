@@ -9,8 +9,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'bootstrapingAngApp';
   status = 'You haven\'t signed up yet';
-  name = '';
-
+  name = '😃';
+  public cdata?: string;
   ontyping(event: Event) {
 
     this.name = (<HTMLInputElement>event.target).value;
